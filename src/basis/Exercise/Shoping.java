@@ -50,9 +50,8 @@ public class Shoping {
 
     public static int shop(int total,int[] input){
         int sum=0;
-        Arrays.sort(input);
+        sort(input);
         for (int a:input){
-
             sum+=a;
             if (sum >total){
                 return sum-a;
@@ -62,5 +61,20 @@ public class Shoping {
             }
         }
         return  0;
+    }
+
+    public static void sort(int [] a){
+        int size=a.length;
+        for (int i=0;i<size-1;i++){
+            for (int j=0;j<size-i-1;j++){
+                int temp;
+                if (a[j]>a[j+1]){
+                    temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                }
+            }
+        }
+
     }
 }
