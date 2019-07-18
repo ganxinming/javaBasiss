@@ -1,10 +1,8 @@
 package basis.log;
 
-import org.apache.log4j.Logger;
-
 public class Log4jTest {
 
-    private static final  Logger LOGGER=Logger.getLogger(Log4jTest.class);
+    /*private static final  Logger LOGGER=Logger.getLogger(Log4jTest.class);
     public static void main(String[] args) {
         devide(3,0);
     }
@@ -39,5 +37,5 @@ public class Log4jTest {
             LOGGER.error("错误:"+e.getMessage());
             return  0;
         }
-    }
+    }*/
 }
