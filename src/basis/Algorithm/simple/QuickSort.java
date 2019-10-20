@@ -6,7 +6,7 @@ package basis.Algorithm.simple;
  */
 public class QuickSort {
     public static void main(String[] args) {
-        int [] a={19,82,38,47,57,10,94,88,45,23,45,23,1,2,5,6,9,3};
+        int [] a={88,79,92,15,64,31,54,96,71};
         //因为这里我传入的都是位置，所以length-1
         quick(a,0,a.length-1);
         traverse(a);
@@ -32,9 +32,10 @@ public class QuickSort {
             arry[end]=arry[start];
 
         }
-        arry[end]=key;
+        //最后是用start还是end返回都一样，因为上面的所有while条件是start<end,所以最后肯定是start=end
+        arry[start]=key;
         //返回分割点最后的坐标
-        return end;
+        return start;
 
     }
     //递归调用

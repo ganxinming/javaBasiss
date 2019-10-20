@@ -9,8 +9,8 @@ package basis.Algorithm.simple;
 public class BubblingSort {
 
     public static void main(String[] args) {
-        int [] a={1,9,2,8,3,7,5,6};
-        traverse(bubblSort(a));
+        int[] arr={1,8,2,9,4,3,6,7,2};
+        traverse(bubblSort(arr));
     }
     //将大数送到最上面
     public static int [] bubblSort(int[] arry){
